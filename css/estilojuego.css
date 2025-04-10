@@ -1,0 +1,50 @@
+*{
+padding: 0;
+font-family: century gothic;
+text-align: center;
+}
+
+body{
+    background: url('../images/fondo_escalerav1.png') no-repeat 0px 0px;
+    background-size: cover;
+}
+canvas {
+  border: 3px solid #ddd; /* Borde oscuro */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+  background: linear-gradient(135deg, #f0f0f0, #d9d9d9); /* Fondo degradado */
+}
+.mensaje {
+  position: relative;
+  width: 900px; 
+  height: auto; 
+  top: 300px; 
+  left: 160px; 
+  padding: 20px; 
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  border: 1px solid #ddd; 
+  font-family: 'Century Gothic', sans-serif; 
+  color: #333; 
+  text-align: left; 
+}
+
+.mensaje ul {
+  list-style-position: inside; 
+  padding: 0;
+  margin: 10px 0; 
+}
+
+.mensaje ul li {
+  padding: 8px 0; 
+  line-height: 1.8; 
+  font-size: 16px; 
+  color: #555; 
+  transition: color 0.3s ease; 
+}
+
+.mensaje ul li:hover {
+  color: #000; 
+  font-weight: bold; 
+}

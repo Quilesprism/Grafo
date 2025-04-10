@@ -1,0 +1,106 @@
+*{
+padding: 0;
+font-family: century gothic;
+text-align: center;
+
+}
+
+body{
+background: url('fondo2.jpg') no-repeat 0px 0px;
+background-size: cover;  
+}
+
+.formulario{
+    
+    background:"white";
+    
+}
+.met{
+    float:right;
+    width:45% ;
+    height:45%;
+}
+.ud{
+    padding: 10px 10px;
+    float:left;
+    width:40% ;
+    height:40%;
+}
+
+.formulario form {
+
+    padding: 10px 10px;
+    
+    background-color: #ededed;
+    margin: calc(15% + 100px);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.campos{
+
+    margin-top: 130px;
+}
+
+h1{
+padding: 12px;
+color:#000;
+}
+
+p{
+   padding: 10px;
+   color:#444;
+}
+
+input{
+width: calc(100% - 20%);
+padding :9px;
+margin: auto;
+margin-top:12px;
+font-size:16px;
+}
+
+input[type='submit']{
+background-color:rgb(42, 174, 235);
+color: #fff;
+width: calc(80% - 20px);
+margin: 1% 10%;
+margin-top:12px;
+border:none;
+}
+
+select {
+    margin-bottom: 8px;
+    outline: 0;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 4px;
+  }
+
+.ok{
+/*margin: calc(10% + 100px);*/
+margin-top: 30%;
+margin: 10px 50px 20px;
+margin-bottom: 0px;
+text-align:center;
+padding: 10px 50px 30px 0;
+background-color:#CADFF8;
+position: relative;
+}
+.bad{
+text-align: center;
+padding: 10px;
+background-color: #a22;
+color: #fff;
+}
+
+.clear{
+text-align: center;
+width: 100%;
+padding: 10px;
+background-color: #fff;
+color: #fff;
+}
+
+
+
+

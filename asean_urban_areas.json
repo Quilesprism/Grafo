@@ -1,0 +1,178 @@
+{
+    "Indonesia": {
+        "cities": [
+            {
+                "city": "Jakarta",
+                "population": 31673824,
+                "area": 7076.3,
+                "population_density": 4476.043129884261
+            },
+            {
+                "city": "Surabaya",
+                "population": 9924509,
+                "area": 6310.0,
+                "population_density": 1572.8223454833596
+            },
+            {
+                "city": "Bandung",
+                "population": 8790308,
+                "area": 3500.3,
+                "population_density": 2511.3013170299687
+            },
+            {
+                "city": "Semarang",
+                "population": 6009982,
+                "area": 4795.9,
+                "population_density": 1253.149982276528
+            },
+            {
+                "city": "Medan",
+                "population": 4756863,
+                "area": 3189.2,
+                "population_density": 1491.553681173962
+            },
+            {
+                "city": "Makassar",
+                "population": 2725951,
+                "area": 2666.6,
+                "population_density": 1022.2571814295358
+            },
+            {
+                "city": "Palembang",
+                "population": 2634501,
+                "area": 9886.6,
+                "population_density": 266.471891246738
+            },
+            {
+                "city": "Yogyakarta",
+                "population": 2485163,
+                "area": 1118.2,
+                "population_density": 2222.4673582543373
+            }
+        ],
+        "total_population": 69001101,
+        "total_area": 38543.1,
+        "population_density": 1790.2322594705668
+    },
+    "Philippines": {
+        "cities": [
+            {
+                "city": "Manila",
+                "population": 28250517,
+                "area": 7967.98,
+                "population_density": 3545.505510807005
+            },
+            {
+                "city": "Davao",
+                "population": 3339284,
+                "area": 6492.8,
+                "population_density": 514.3056924593395
+            },
+            {
+                "city": "Cebu",
+                "population": 3165799,
+                "area": 1062.8,
+                "population_density": 2978.7344749717727
+            }
+        ],
+        "total_population": 34755600,
+        "total_area": 15523.579999999998,
+        "population_density": 2238.8907713298095
+    },
+    "Vietnam": {
+        "cities": [
+            {
+                "city": "Ho Chi Minh City",
+                "population": 21281639,
+                "area": 30595.0,
+                "population_density": 695.5920575257395
+            },
+            {
+                "city": "Hanoi",
+                "population": 19980000,
+                "area": 24314.7,
+                "population_density": 821.7251292428037
+            },
+            {
+                "city": "Da Nang",
+                "population": 5622814,
+                "area": 26640.3,
+                "population_density": 211.06421474232647
+            }
+        ],
+        "total_population": 46884453,
+        "total_area": 81550.0,
+        "population_density": 574.9166523605151
+    },
+    "Thailand": {
+        "cities": [
+            {
+                "city": "Bangkok",
+                "population": 10696258,
+                "area": 7700.0,
+                "population_density": 1389.1244155844156
+            }
+        ],
+        "total_population": 10696258,
+        "total_area": 7700.0,
+        "population_density": 1389.1244155844156
+    },
+    "Malaysia": {
+        "cities": [
+            {
+                "city": "Kuala Lumpur",
+                "population": 8455029,
+                "area": 8347.0,
+                "population_density": 1012.9422547022882
+            },
+            {
+                "city": "George Town",
+                "population": 2843344,
+                "area": 3764.3,
+                "population_density": 755.344685598916
+            }
+        ],
+        "total_population": 11298373,
+        "total_area": 12111.3,
+        "population_density": 932.878634002956
+    },
+    "Myanmar": {
+        "cities": [
+            {
+                "city": "Yangon",
+                "population": 7360703,
+                "area": 10276.7,
+                "population_density": 716.2516177372113
+            }
+        ],
+        "total_population": 7360703,
+        "total_area": 10276.7,
+        "population_density": 716.2516177372113
+    },
+    "Singapore": {
+        "cities": [
+            {
+                "city": "Singapore",
+                "population": 5685807,
+                "area": 734.3,
+                "population_density": 7743.166280811658
+            }
+        ],
+        "total_population": 5685807,
+        "total_area": 734.3,
+        "population_density": 7743.166280811658
+    },
+    "Cambodia": {
+        "cities": [
+            {
+                "city": "Phnom Penh",
+                "population": 2506123,
+                "area": 679.0,
+                "population_density": 3690.902798232695
+            }
+        ],
+        "total_population": 2506123,
+        "total_area": 679.0,
+        "population_density": 3690.902798232695
+    }
+}

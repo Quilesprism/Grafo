@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Acceso a Escalera</title>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="imagenes/icono.png" sizes="64x64">
+<link rel="stylesheet" type="text/css" href= "css/escalera.css" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>  <!-- para usar P5JS desde el repo ONLINE -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   <!-- para usar JQUERY desde repo ONLINE -->
+<script language="javascript" type="text/javascript" src="scripts/sincronia.js"></script>  <!-- mis scripts JS -->
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
+<body class="body">
+	<!-- <div id= "contenedor1"> -->
+
+		<div id = id="ctn-form" class="cont-formulario">
+			
+			<form action="servicios/insercion_Usuario_escalera.php" method="post" class="form">
+
+				<h2>Enregistrement</h2>
+				<p>Comment tu t'apelles?</p>
+				<p><input type="text" name="nombre" required placeholder= "écrive ton nom" class="form-control"></p>
+				<p>Quel âge as-tu? </p> 
+				<p><select  required name="edad" class="form-control"> 
+					<option value = ""> Choisir </option>
+					<option value = "1"> 1 an </option>
+					<option value = "2"> 2 ans </option>
+					<option value = "3"> 3 ans </option>
+					<option value = "4"> 4 ans </option>
+					<option value = "5"> 5 ans </option>
+					<option value = "6"> 6 ans </option>
+					<option value = "7"> 7 ans </option>
+					<option value = "8"> 8 ans </option>
+					<option value = "9"> 9 ans </option>
+					<option value = "10"> 10 ans </option>
+					<option value = "11"> 11 ans </option>
+					<option value = "12"> 12 ans </option>
+					<option value = "13"> 13 ans </option>
+					<option value = "14"> 14 ans </option>
+					<option value = "15"> 15 ans </option>
+					<option value = "16"> 16 ans </option>
+					<option value = "17"> 17 ans </option>
+					<option value = "18"> 18 ans </option>
+					<option value = "19"> 19 ans </option>
+					<option value = "20"> 20 ans </option>
+					<option value = "21"> 21 ans </option>
+					<option value = "22"> 22 ans </option>
+					<option value = "23"> 23 ans </option>
+					<option value = "24"> 24 ans </option>
+					<option value = "25"> 25 ans </option>
+					<option value = "26"> 26 ans </option>
+					<option value = "27"> 27 ans </option>
+					<option value = "28"> 28 ans </option>
+					<option value = "29"> 29 ans </option>
+					<option value = "30"> 30 ans </option>
+					<option value = "31"> 31 ans </option>
+					<option value = "32"> 32 ans </option>
+					<option value = "33"> 33 ans </option>
+					<option value = "34"> 34 ans </option>
+					<option value = "35"> 35 ans </option>
+					<option value = "36"> 36 ans </option>
+					<option value = "37"> 37 ans </option>
+					<option value = "38"> 38 ans </option>
+					<option value = "39"> 39 ans </option>
+					<option value = "40"> 40 ans </option>
+					<option value = "41"> 41 ans </option>
+					<option value = "42"> 42 ans </option>
+					<option value = "43"> 43 ans </option>
+					<option value = "44"> 44 ans </option>
+					<option value = "45"> 45 ans </option>
+					<option value = "46"> 46 ans </option>
+					<option value = "47"> 47 ans </option>
+					<option value = "48"> 48 ans </option>
+					<option value = "49"> 49 ans </option>
+					<option value = "50"> 50 ans </option>
+					<option value = "51"> 51 ans </option>
+					<option value = "52"> 52 ans </option>
+					<option value = "53"> 53 ans </option>
+					<option value = "54"> 54 ans </option>
+					<option value = "55"> 55 ans </option>
+					<option value = "56"> 56 ans </option>
+					<option value = "57"> 57 ans </option>
+					<option value = "58"> 58 ans </option>
+					<option value = "59"> 59 ans </option>
+					<option value = "60"> 60 ans </option>
+					<option value = "61"> 61 ans </option>
+					<option value = "62"> 62 ans </option>
+					<option value = "63"> 63 ans </option>
+					<option value = "64"> 64 ans </option>
+					<option value = "65"> 65 ans </option>
+					<option value = "66"> 66 ans </option>
+					<option value = "67"> 67 ans </option>
+					<option value = "68"> 68 ans </option>
+					<option value = "69"> 69 ans </option>
+					<option value = "70"> 70 ans </option>
+					<option value = "71"> 71 ans </option>
+					<option value = "72"> 72 ans </option>
+					<option value = "73"> 73 ans </option>
+					<option value = "74"> 74 ans </option>
+					<option value = "75"> 75 ans </option>
+					<option value = "76"> 76 ans </option>
+					<option value = "77"> 77 ans </option>
+					<option value = "78"> 78 ans </option>
+					<option value = "79"> 79 ans </option>
+					<option value = "80"> 80 ans </option>
+					<option value = "81"> 81 ans </option>
+					<option value = "82"> 82 ans </option>
+					<option value = "83"> 83 ans </option>
+					<option value = "84"> 84 ans </option>
+					<option value = "85"> 85 ans </option>
+					<option value = "86"> 86 ans </option>
+					<option value = "87"> 87 ans </option>
+					<option value = "88"> 88 ans </option>
+					<option value = "89"> 89 ans </option>
+					<option value = "90"> 90 ans </option>
+					<option value = "91"> 91 ans </option>
+					<option value = "92"> 92 ans </option>
+					<option value = "93"> 93 ans </option>
+					<option value = "94"> 94 ans </option>
+					<option value = "95"> 95 ans </option>
+					<option value = "96"> 96 ans </option>
+					<option value = "97"> 97 ans </option>
+					<option value = "98"> 98 ans </option>
+					<option value = "99"> 99 ans </option>
+				</select> </p>
+				<p>De quel pays es-tu?</p> 
+
+				<p><select name="pais" id="pais" class="form-control">
+					<option value="AFGANISTAN">AFGANISTAN</option>
+					<option value="ALBANIA">ALBANIA</option>
+					<option value="ALEMANIA">ALEMANIA</option>
+					<option value="ANDORRA">ANDORRA</option>
+					<option value="ANGOLA">ANGOLA</option>
+					<option value="ANGUILLA">ANGUILLA</option>
+					<option value="ANTIGUA Y BARBUDA">ANTIGUA Y BARBUDA</option>
+					<option value="ANTILLAS HOLANDESAS">ANTILLAS HOLANDESAS</option>
+					<option value="ARABIA SAUDI">ARABIA SAUDI</option>
+					<option value="ARGELIA">ARGELIA</option>
+					<option value="ARGENTINA">ARGENTINA</option>
+					<option value="ARMENIA">ARMENIA</option>
+					<option value="ARUBA">ARUBA</option>
+					<option value="AUSTRALIA">AUSTRALIA</option>
+					<option value="AUSTRIA">AUSTRIA</option>
+					<option value="AZERBAIYAN">AZERBAIYAN</option>
+					<option value="BAHAMAS">BAHAMAS</option>
+					<option value="BAHREIN">BAHREIN</option>
+					<option value="BANGLADESH">BANGLADESH</option>
+					<option value="BARBADOS">BARBADOS</option>
+					<option value="BELARUS">BELARUS</option>
+					<option value="BELGICA">BELGICA</option>
+					<option value="BELICE">BELICE</option>
+					<option value="BENIN">BENIN</option>
+					<option value="BERMUDAS">BERMUDAS</option>
+					<option value="BHUTÁN">BHUTÁN</option>
+					<option value="BOLIVIA">BOLIVIA</option>
+					<option value="BOSNIA Y HERZEGOVINA">BOSNIA Y HERZEGOVINA</option>
+					<option value="BOTSWANA">BOTSWANA</option>
+					<option value="BRASIL">BRASIL</option>
+					<option value="BRUNEI">BRUNEI</option>
+					<option value="BULGARIA">BULGARIA</option>
+					<option value="BURKINA FASO">BURKINA FASO</option>
+					<option value="BURUNDI">BURUNDI</option>
+					<option value="CABO VERDE">CABO VERDE</option>
+					<option value="CAMBOYA">CAMBOYA</option>
+					<option value="CAMERUN">CAMERUN</option>
+					<option value="CANADA">CANADA</option>
+					<option value="CHAD">CHAD</option>
+					<option value="CHILE">CHILE</option>
+					<option value="CHINA">CHINA</option>
+					<option value="CHIPRE">CHIPRE</option>
+					<option value="COLOMBIA">COLOMBIA</option>
+					<option value="COMORES">COMORES</option>
+					<option value="CONGO">CONGO</option>
+					<option value="COREA">COREA</option>
+					<option value="COREA DEL NORTE ">COREA DEL NORTE </option>
+					<option value="COSTA DE MARFIL">COSTA DE MARFIL</option>
+					<option value="COSTA RICA">COSTA RICA</option>
+					<option value="CROACIA">CROACIA</option>
+					<option value="CUBA">CUBA</option>
+					<option value="DINAMARCA">DINAMARCA</option>
+					<option value="DJIBOUTI">DJIBOUTI</option>
+					<option value="DOMINICA">DOMINICA</option>
+					<option value="ECUADOR">ECUADOR</option>
+					<option value="EGIPTO">EGIPTO</option>
+					<option value="EL SALVADOR">EL SALVADOR</option>
+					<option value="EMIRATOS ARABES UNIDOS">EMIRATOS ARABES UNIDOS</option>
+					<option value="ERITREA">ERITREA</option>
+					<option value="ESLOVENIA">ESLOVENIA</option>
+					<option value="ESPAÑA">ESPAÑA</option>
+					<option value="ESTADOS UNIDOS DE AMERICA">ESTADOS UNIDOS DE AMERICA</option>
+					<option value="ESTONIA">ESTONIA</option>
+					<option value="ETIOPIA">ETIOPIA</option>
+					<option value="FIJI">FIJI</option>
+					<option value="FILIPINAS">FILIPINAS</option>
+					<option value="FINLANDIA">FINLANDIA</option>
+					<option value="FRANCIA" selected="selected">FRANCE</option>
+					<option value="GABON">GABON</option>
+					<option value="GAMBIA">GAMBIA</option>
+					<option value="GEORGIA">GEORGIA</option>
+					<option value="GHANA">GHANA</option>
+					<option value="GIBRALTAR">GIBRALTAR</option>
+					<option value="GRANADA">GRANADA</option>
+					<option value="GRECIA">GRECIA</option>
+					<option value="GROENLANDIA">GROENLANDIA</option>
+					<option value="GUADALUPE">GUADALUPE</option>
+					<option value="GUAM">GUAM</option>
+					<option value="GUATEMALA">GUATEMALA</option>
+					<option value="GUAYANA FRANCESA">GUAYANA FRANCESA</option>
+					<option value="GUERNESEY">GUERNESEY</option>
+					<option value="GUINEA">GUINEA</option>
+					<option value="GUINEA ECUATORIAL">GUINEA ECUATORIAL</option>
+					<option value="GUINEA-BISSAU">GUINEA-BISSAU</option>
+					<option value="GUYANA">GUYANA</option>
+					<option value="HAITI">HAITI</option>
+					<option value="HONDURAS">HONDURAS</option>
+					<option value="HONG KONG">HONG KONG</option>
+					<option value="HUNGRIA">HUNGRIA</option>
+					<option value="INDIA">INDIA</option>
+					<option value="INDONESIA">INDONESIA</option>
+					<option value="IRAN">IRAN</option>
+					<option value="IRAQ">IRAQ</option>
+					<option value="IRLANDA">IRLANDA</option>
+					<option value="ISLA DE MAN">ISLA DE MAN</option>
+					<option value="ISLA NORFOLK">ISLA NORFOLK</option>
+					<option value="ISLANDIA">ISLANDIA</option>
+					<option value="ISLAS ALAND">ISLAS ALAND</option>
+					<option value="ISLAS CAIMÁN">ISLAS CAIMÁN</option>
+					<option value="ISLAS COOK">ISLAS COOK</option>
+					<option value="ISLAS DEL CANAL">ISLAS DEL CANAL</option>
+					<option value="ISLAS FEROE">ISLAS FEROE</option>
+					<option value="ISLAS MALVINAS">ISLAS MALVINAS</option>
+					<option value="ISLAS MARIANAS DEL NORTE">ISLAS MARIANAS DEL NORTE</option>
+					<option value="ISLAS MARSHALL">ISLAS MARSHALL</option>
+					<option value="ISLAS PITCAIRN">ISLAS PITCAIRN</option>
+					<option value="ISLAS SALOMON">ISLAS SALOMON</option>
+					<option value="ISLAS TURCAS Y CAICOS">ISLAS TURCAS Y CAICOS</option>
+					<option value="ISLAS VIRGENES BRITANICAS">ISLAS VIRGENES BRITANICAS</option>
+					<option value="ISLAS VÍRGENES DE LOS ESTADOS UNIDOS">ISLAS VÍRGENES DE LOS ESTADOS UNIDOS</option>
+					<option value="ISRAEL">ISRAEL</option>
+					<option value="ITALIA">ITALIA</option>
+					<option value="JAMAICA">JAMAICA</option>
+					<option value="JAPON">JAPON</option>
+					<option value="JERSEY">JERSEY</option>
+					<option value="JORDANIA">JORDANIA</option>
+					<option value="KAZAJSTAN">KAZAJSTAN</option>
+					<option value="KENIA">KENIA</option>
+					<option value="KIRGUISTAN">KIRGUISTAN</option>
+					<option value="KIRIBATI">KIRIBATI</option>
+					<option value="KUWAIT">KUWAIT</option>
+					<option value="LAOS">LAOS</option>
+					<option value="LESOTHO">LESOTHO</option>
+					<option value="LETONIA">LETONIA</option>
+					<option value="LIBANO">LIBANO</option>
+					<option value="LIBERIA">LIBERIA</option>
+					<option value="LIBIA">LIBIA</option>
+					<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+					<option value="LITUANIA">LITUANIA</option>
+					<option value="LUXEMBURGO">LUXEMBURGO</option>
+					<option value="MACAO">MACAO</option>
+					<option value="MACEDONIA ">MACEDONIA </option>
+					<option value="MADAGASCAR">MADAGASCAR</option>
+					<option value="MALASIA">MALASIA</option>
+					<option value="MALAWI">MALAWI</option>
+					<option value="MALDIVAS">MALDIVAS</option>
+					<option value="MALI">MALI</option>
+					<option value="MALTA">MALTA</option>
+					<option value="MARRUECOS">MARRUECOS</option>
+					<option value="MARTINICA">MARTINICA</option>
+					<option value="MAURICIO">MAURICIO</option>
+					<option value="MAURITANIA">MAURITANIA</option>
+					<option value="MAYOTTE">MAYOTTE</option>
+					<option value="MEXICO">MEXICO</option>
+					<option value="MICRONESIA">MICRONESIA</option>
+					<option value="MOLDAVIA">MOLDAVIA</option>
+					<option value="MONACO">MONACO</option>
+					<option value="MONGOLIA">MONGOLIA</option>
+					<option value="MONTENEGRO">MONTENEGRO</option>
+					<option value="MONTSERRAT">MONTSERRAT</option>
+					<option value="MOZAMBIQUE">MOZAMBIQUE</option>
+					<option value="MYANMAR">MYANMAR</option>
+					<option value="NAMIBIA">NAMIBIA</option>
+					<option value="NAURU">NAURU</option>
+					<option value="NEPAL">NEPAL</option>
+					<option value="NICARAGUA">NICARAGUA</option>
+					<option value="NIGER">NIGER</option>
+					<option value="NIGERIA">NIGERIA</option>
+					<option value="NIUE">NIUE</option>
+					<option value="NORUEGA">NORUEGA</option>
+					<option value="NUEVA CALEDONIA">NUEVA CALEDONIA</option>
+					<option value="NUEVA ZELANDA">NUEVA ZELANDA</option>
+					<option value="OMAN">OMAN</option>
+					<option value="PAISES BAJOS">PAISES BAJOS</option>
+					<option value="PAKISTAN">PAKISTAN</option>
+					<option value="PALAOS">PALAOS</option>
+					<option value="PALESTINA">PALESTINA</option>
+					<option value="PANAMA">PANAMA</option>
+					<option value="PAPUA NUEVA GUINEA">PAPUA NUEVA GUINEA</option>
+					<option value="PARAGUAY">PARAGUAY</option>
+					<option value="PERU">PERU</option>
+					<option value="POLINESIA FRANCESA">POLINESIA FRANCESA</option>
+					<option value="POLONIA">POLONIA</option>
+					<option value="PORTUGAL">PORTUGAL</option>
+					<option value="PUERTO RICO">PUERTO RICO</option>
+					<option value="QATAR">QATAR</option>
+					<option value="REINO UNIDO">REINO UNIDO</option>
+					<option value="REP.DEMOCRATICA DEL CONGO">REP.DEMOCRATICA DEL CONGO</option>
+					<option value="REPUBLICA CENTROAFRICANA">REPUBLICA CENTROAFRICANA</option>
+					<option value="REPUBLICA CHECA">REPUBLICA CHECA</option>
+					<option value="REPUBLICA DOMINICANA">REPUBLICA DOMINICANA</option>
+					<option value="REPUBLICA ESLOVACA">REPUBLICA ESLOVACA</option>
+					<option value="REUNION">REUNION</option>
+					<option value="RUANDA">RUANDA</option>
+					<option value="RUMANIA">RUMANIA</option>
+					<option value="RUSIA">RUSIA</option>
+					<option value="SAHARA OCCIDENTAL">SAHARA OCCIDENTAL</option>
+					<option value="SAMOA">SAMOA</option>
+					<option value="SAMOA AMERICANA">SAMOA AMERICANA</option>
+					<option value="SAN BARTOLOME">SAN BARTOLOME</option>
+					<option value="SAN CRISTOBAL Y NIEVES">SAN CRISTOBAL Y NIEVES</option>
+					<option value="SAN MARINO">SAN MARINO</option>
+					<option value="SAN MARTIN (PARTE FRANCESA)">SAN MARTIN (PARTE FRANCESA)</option>
+					<option value="SAN PEDRO Y MIQUELON ">SAN PEDRO Y MIQUELON </option>
+					<option value="SAN VICENTE Y LAS GRANADINAS">SAN VICENTE Y LAS GRANADINAS</option>
+					<option value="SANTA HELENA">SANTA HELENA</option>
+					<option value="SANTA LUCIA">SANTA LUCIA</option>
+					<option value="SANTA SEDE">SANTA SEDE</option>
+					<option value="SANTO TOME Y PRINCIPE">SANTO TOME Y PRINCIPE</option>
+					<option value="SENEGAL">SENEGAL</option>
+					<option value="SERBIA">SERBIA</option>
+					<option value="SEYCHELLES">SEYCHELLES</option>
+					<option value="SIERRA LEONA">SIERRA LEONA</option>
+					<option value="SINGAPUR">SINGAPUR</option>
+					<option value="SIRIA">SIRIA</option>
+					<option value="SOMALIA">SOMALIA</option>
+					<option value="SRI LANKA">SRI LANKA</option>
+					<option value="SUDAFRICA">SUDAFRICA</option>
+					<option value="SUDAN">SUDAN</option>
+					<option value="SUECIA">SUECIA</option>
+					<option value="SUIZA">SUIZA</option>
+					<option value="SURINAM">SURINAM</option>
+					<option value="SVALBARD Y JAN MAYEN">SVALBARD Y JAN MAYEN</option>
+					<option value="SWAZILANDIA">SWAZILANDIA</option>
+					<option value="TADYIKISTAN">TADYIKISTAN</option>
+					<option value="TAILANDIA">TAILANDIA</option>
+					<option value="TANZANIA">TANZANIA</option>
+					<option value="TIMOR ORIENTAL">TIMOR ORIENTAL</option>
+					<option value="TOGO">TOGO</option>
+					<option value="TOKELAU">TOKELAU</option>
+					<option value="TONGA">TONGA</option>
+					<option value="TRINIDAD Y TOBAGO">TRINIDAD Y TOBAGO</option>
+					<option value="TUNEZ">TUNEZ</option>
+					<option value="TURKMENISTAN">TURKMENISTAN</option>
+					<option value="TURQUIA">TURQUIA</option>
+					<option value="TUVALU">TUVALU</option>
+					<option value="UCRANIA">UCRANIA</option>
+					<option value="UGANDA">UGANDA</option>
+					<option value="URUGUAY">URUGUAY</option>
+					<option value="UZBEKISTAN">UZBEKISTAN</option>
+					<option value="VANUATU">VANUATU</option>
+					<option value="VENEZUELA">VENEZUELA</option>
+					<option value="VIETNAM">VIETNAM</option>
+					<option value="WALLIS Y FORTUNA">WALLIS Y FORTUNA</option>
+					<option value="YEMEN">YEMEN</option>
+					<option value="ZAMBIA">ZAMBIA</option>
+					<option value="ZIMBABWE">ZIMBABWE</option>
+
+				</select> </p>
+				<p>Genre</p>
+
+				<p><select name="genero" id="genero" class="form-control">
+					<option value="F">Femme</option>
+					<option value="M">Homme</option>
+				</select></p>
+
+				<p>Établissement d'enseignement</p>
+				<p><input type="text" name="institucion" required placeholder="écrivez votre établissement d'enseignement" class="form-control"></p>
+
+				<p style="text-align: center;"><button type="submit" style="cursor: pointer;" value="Registrar" id="enviar" class="btn btn-primary">Enregistrer</button></p>
+
+			</form>
+		</div>
+	<!-- </div>
+	</div> -->
+</body>
+</html>
