@@ -100,36 +100,35 @@ $ident=$_SESSION['uid'];
 
 	<script>
     function validarFormulario() {
-            // Obtener todas las preguntas
+
             var preguntas = document.querySelectorAll('.preguntas');
             var formularioValido = true;
             var preguntasSinResponder = [];
 
             // Iterar sobre cada pregunta
             preguntas.forEach(function(pregunta) {
-                // Obtener todas las opciones de la pregunta actual
+      
                 var opciones = pregunta.querySelectorAll('input[type="radio"]');
                 var seleccionada = false;
 
-                // Verificar si se ha seleccionado alguna opción
+
                 opciones.forEach(function(opcion) {
                     if (opcion.checked) {
                         seleccionada = true;
                     }
                 });
 
-                // Si ninguna opción está seleccionada, agregar la pregunta a la lista de preguntas sin responder
+
                 if (!seleccionada) {
                     formularioValido = false;
                     preguntasSinResponder.push(pregunta);
                 }
             });
 
-            // Si hay preguntas sin responder, mostrar mensaje de advertencia
+           
             if (!formularioValido) {
                 alert("Por favor, selecciona una opción para todas las preguntas.");
-                preguntasSinResponder[0].scrollIntoView({ behavior: 'smooth' }); // Desplazar la pantalla hacia la primera pregunta sin responder
-            }
+                preguntasSinResponder[0].scrollIntoView({ behavior: 'smooth' }); 
 
             return formularioValido;
         }

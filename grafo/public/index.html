@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Gráfico</title>
+    <title>Visualización de Grafo</title>
 </head>
 <body>
+    <div class="header">
+        <h1>Visualización de Grafo</h1>
+        <p>Explora las conexiones y relaciones entre los nodos.</p>
+    </div>
     <div id="tooltip" class="tooltip"></div>
-    <svg id="graphCanvas"></svg> 
+    <div class="graph-container">
+        <svg id="graphCanvas"></svg> 
+    </div>
     
     <script src="https://d3js.org/d3.v7.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -43,15 +43,65 @@ if (isset($_POST['jugar'])) {
         $stmt_cuestionario->bind_param("ssssssss", $ident, $id_nodo, $res_pre_1, $res_pre_2, $res_pre_3, $res_pre_4, $res_pre_5, $res_pre_6);
 
         if ($stmt_cuestionario->execute()) {
-            echo "<h3 class=\"ok\">¡Cuestionario completado correctamente!</h3>";
-            echo "<script> setTimeout(function(){ window.location='../main.php?id_jugador=$ident'; }, 2000) </script>";
+            // Mostrar mensaje de éxito con SweetAlert
+            echo "
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    Swal.fire({
+                        title: '¡Cuestionario completado!',
+                        text: 'Tus respuestas han sido registradas correctamente.',
+                        icon: 'success',
+                        confirmButtonText: 'Continuar',
+                        allowOutsideClick: false
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location = '../main.php?id_jugador=$ident';
+                        }
+                    });
+                });
+            </script>";
         } else {
-            echo "Error al insertar el cuestionario: " . $stmt_cuestionario->error;
+            // Mostrar mensaje de error con SweetAlert
+            echo "
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Hubo un problema al registrar tus respuestas: " . htmlspecialchars($stmt_cuestionario->error) . "',
+                        icon: 'error',
+                        confirmButtonText: 'Intentar de nuevo',
+                        allowOutsideClick: false
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.history.back();
+                        }
+                    });
+                });
+            </script>";
         }
 
         $stmt_cuestionario->close();
     } else {
-        echo "Error al crear el nodo: " . $stmt_nodo->error;
+        // Mostrar mensaje de error con SweetAlert
+        echo "
+        <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Hubo un problema al crear el nodo: " . htmlspecialchars($stmt_nodo->error) . "',
+                    icon: 'error',
+                    confirmButtonText: 'Intentar de nuevo',
+                    allowOutsideClick: false
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.history.back();
+                    }
+                });
+            });
+        </script>";
     }
 
     $stmt_nodo->close();

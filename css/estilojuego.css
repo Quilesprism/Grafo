@@ -9,6 +9,8 @@ body{
     background-size: cover;
 }
 canvas {
+  width: 400px; /* Reducir el ancho */
+  height: 200px; /* Reducir la altura */
   border: 3px solid #ddd; /* Borde oscuro */
   border-radius: 15px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra elegante */
@@ -16,19 +18,21 @@ canvas {
 }
 .mensaje {
   position: relative;
-  width: 900px; 
+  width: 600px; /* Reducir el ancho */
   height: auto; 
-  top: 300px; 
-  left: 160px; 
-  padding: 20px; 
+  top: 170px; 
+  left: 100px; 
+  padding: 15px; /* Reducir el relleno */
   background: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
   border: 1px solid #ddd; 
   font-family: 'Century Gothic', sans-serif; 
+  font-size: 14px; /* Reducir el tamaño de fuente */
   color: #333; 
   text-align: left; 
 }
+
 
 .mensaje ul {
   list-style-position: inside; 
@@ -37,9 +41,9 @@ canvas {
 }
 
 .mensaje ul li {
-  padding: 8px 0; 
-  line-height: 1.8; 
-  font-size: 16px; 
+  padding: 6px 0; /* Reducir el espacio entre elementos */
+  line-height: 1.6; /* Ajustar la altura de línea */
+  font-size: 14px; /* Reducir el tamaño de fuente */
   color: #555; 
   transition: color 0.3s ease; 
 }
